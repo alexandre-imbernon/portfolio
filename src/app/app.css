@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'PerfectDos';
+    src: url('../app/assets/fonts/PerfectDOSVGA437.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bg-custom-gradient {
+  background: linear-gradient(to right, #000080 0%, #0033A0 30%, #1A48A0 50%, #3399FF 100%);
+}
+
