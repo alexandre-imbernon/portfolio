@@ -15,8 +15,10 @@ export function App() {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <Header />
-        <RetroBar onSectionChange={setCurrentSection} />
-        {/* 👇 Plus besoin de Gameplay ou Section au centre */}
+        <RetroBar
+          onSectionChange={setCurrentSection}
+          currentSection={currentSection}
+        />
         <Footer section={currentSection} />
       </div>
     </div>

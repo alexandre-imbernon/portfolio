@@ -12,3 +12,7 @@
   background: linear-gradient(to right, #000080 0%, #0033A0 30%, #1A48A0 50%, #3399FF 100%);
 }
 
+.bg-custom-gradientGray {
+  background: linear-gradient(to right, #F0F0F0 0%, #D8D8D8 50%, #C0C0C0 100%);
+  border: solid #CCCCCC}
+
