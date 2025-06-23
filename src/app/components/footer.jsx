@@ -2,7 +2,7 @@ export function Footer({ section }) {
   const renderContent = () => {
     switch (section) {
       case 'about':
-        return "Je suis un développeur passionné par les interfaces rétro et l’interactivité.";
+        return "Je suis un developpeur passionne par les interfaces retro et l interactivite.";
       case 'skills':
         return "React, Tailwind, Firestore, Node.js, et un soupçon de magie noire.";
       case 'works':
@@ -15,8 +15,8 @@ export function Footer({ section }) {
   };
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-sm px-4 py-3 font-mono z-10">
-      {renderContent()}
+  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 
+      w-[100%] max-w-6x1 px-6 py-3 bg-black bg-opacity-60 text-white border border-white shadow-md font-mono text-l">      {renderContent()}
     </div>
   );
 }
