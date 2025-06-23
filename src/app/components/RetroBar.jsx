@@ -1,6 +1,6 @@
 export function RetroBar({ onSectionChange, currentSection }) {
   return (
-<div className="h-8 bg-custom-gradientGray border-white flex items-center px-7 space-x-4">
+<div className="h-7 bg-custom-gradientGray border-white flex items-center px-7 space-x-3">
       {["about", "skills", "works", "contact"].map((item) => {
         const isActive = currentSection === item;
         const firstLetter = item.charAt(0);
