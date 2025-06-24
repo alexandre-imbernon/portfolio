@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { Header } from "./components/header";
-import { RetroBar } from "./components/RetroBar";
 import backgroundImage from "./assets/bg.png";
-import { Footer } from "./components/footer";
+import { useState } from "react";
+import { Header } from "./components/header";
+import { RetroBar } from "./components/RetroBar"; /* Barre en dessous de la barre bleue windows */
+import { Gameplay } from "./components/GameplayBar"; /* Carré d'interaction */
+import { Footer } from "./components/footer"; /* Barre de dialogue */
 
 export function App() {
   const [currentSection, setCurrentSection] = useState("about");
@@ -15,13 +16,13 @@ export function App() {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         {/* Composants principaux */}
-        <Header />
+        <Header/>
         <RetroBar
           onSectionChange={setCurrentSection}
           currentSection={currentSection}
         />
-        <Footer section={currentSection} />
-
+        <Gameplay/>
+        <Footer section={currentSection}/>
         {/* Cadres et effets visuels */}
         <div className="fixed inset-0 border-x border-t border-white/50 z-50 pointer-events-none" />
         <div className="fixed bottom-0 left-0 w-full h-[2px] bg-white/50 z-50 pointer-events-none" />

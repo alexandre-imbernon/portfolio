@@ -1,5 +1,4 @@
 import { NoiseOverlay } from "./NoiseOverlay";
-import { RetroBar } from "./RetroBar";
 import { WindowsControls } from "./WindowsControl";
 
 export function Header() {
