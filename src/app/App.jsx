@@ -1,4 +1,4 @@
-import backgroundImage from "./assets/bg.png";
+import backgroundImage from "./assets/bg.webp";
 import { useState } from "react";
 import { Header } from "./components/header";
 import { RetroBar } from "./components/RetroBar"; /* Barre en dessous de la barre bleue windows */
@@ -11,10 +11,11 @@ export function App() {
   return (
     <div className="fixed inset-0 border border-white/50">
       {/* Arrière-plan principal avec image */}
-      <div
-        className="bg-black min-h-screen bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
+   <div
+  className="bg-black min-h-screen bg-cover bg-[center_-25%] bg-no-repeat relative"
+  style={{ backgroundImage: `url(${backgroundImage})` }}
+>
+
         {/* Composants principaux */}
         <Header/>
         <RetroBar
